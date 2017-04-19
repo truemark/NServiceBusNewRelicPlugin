@@ -1,0 +1,11 @@
+{
+  "agents": [
+    {
+      "name": "Agent Name",
+      "host": "Host Name",
+      "domain": "Domain",
+      "username": "username",
+      "password": "password"
+    }
+  ]
+}

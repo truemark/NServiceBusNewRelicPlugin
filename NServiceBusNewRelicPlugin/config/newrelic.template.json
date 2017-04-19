@@ -1,0 +1,5 @@
+{
+  "license_key": "Your New Relic license key",
+  "log_file_name": "NServiceBus_newrelic_plugin.log",
+  "log_level":  "debug"
+}
