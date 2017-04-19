@@ -52,7 +52,7 @@ namespace NServiceBusNewRelicPlugin
                 foreach (var metric in metrics)
                 {
                     logger.Debug("Reporting metric: {0}, unit: {1}, value: {2}", metric.metricName, metric.unit, metric.value);
-                    //     ReportMetric(metric.metricName, metric.unit, metric.value);
+                    ReportMetric(metric.metricName, metric.unit, metric.value);
                     count++;
                 }
                 logger.Debug("Reported {0} Metrics.", count);
