@@ -16,7 +16,7 @@ namespace NServiceBusNewRelicPlugin
             lstNServiceMetrics.Add("NumberofmsgsfailuresPersec", new ValuePair { metricName = "Messages/Number Of Messages Failures", metricUnit = "Messages/Sec" });
             lstNServiceMetrics.Add("NumberofmsgspulledfromtheinputqueuePersec", new ValuePair { metricName = "Messages/Number Of Messages Pulled From Input Queue", metricUnit = "Messages/Sec" });
             lstNServiceMetrics.Add("NumberofmsgssuccessfullyprocessedPersec", new ValuePair { metricName = "Messages/Number Of Messages Fully Processed", metricUnit = "Messages/Sec" });
-            lstNServiceMetrics.Add("SLAviolationcountdown", new ValuePair { metricName = "SLA Voilation Countdown", metricUnit = "Voilations" });
+            lstNServiceMetrics.Add("SLAviolationcountdown", new ValuePair { metricName = "SLA Voilation Countdown", metricUnit = "Secs" });
         }
     }
 

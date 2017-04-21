@@ -153,13 +153,13 @@
   <Target Name="Zip" AfterTargets="build">
     <ItemGroup>
       <ExeFile Include="*$(OutputPath)plugin.exe" />
-      <ConfigFile Include="*$(OutputPath)config\*.template.*"/>
-      <ZipFiles Include="config"/>
+      <ConfigFile Include="*$(OutputPath)config\*.template.*" />
+      <ZipFiles Include="config" />
       <ZipFiles Include="*$(OutputPath)plugin.exe" />
     </ItemGroup>
     <MakeDir Directories="..\com.truemark.newrelic.NServiceBus" />
     <MakeDir Directories="..\com.truemark.newrelic.NServiceBus\config" />
-    <Copy SourceFiles="@(ConfigFile)" DestinationFolder="..\com.truemark.newrelic.NServiceBus\config"/>
+    <Copy SourceFiles="@(ConfigFile)" DestinationFolder="..\com.truemark.newrelic.NServiceBus\config" />
     <Copy SourceFiles="@(ExeFile)" DestinationFolder="..\com.truemark.newrelic.NServiceBus" />
     <Zip ZipFileName="..\dist\com.truemark.newrelic.NServiceBus.zip" WorkingDirectory="..\NServiceBusNewRelicPlugin\bin\Release" Files="..\com.truemark.newrelic.NServiceBus" ZipLevel="9" />
   </Target>
